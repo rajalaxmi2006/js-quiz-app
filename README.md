@@ -86,7 +86,7 @@ quiz-app/
 ## 📌 Validation Rules
 
 - All input fields are required
-- Email must follow valid format (e.g. example@mail.com)
+- Email must follow valid format (e.g. biswalrajalaxmi901@gmail.com)
 - Email must be unique (no duplicate registration)
 - Password must be at least 6 characters long
 - Prevent empty form submission
@@ -130,8 +130,8 @@ If you find this project helpful:
 
 **Raj (Developer)**
 
-- GitHub: https://github.com/your-username
-- Email: your-email@example.com
+- GitHub: https://github.com/rajalaxmi2006/
+- Email: biswalrajalaxmi901@gmail.com
 
 Feel free to reach out for collaboration or feedback.
 
