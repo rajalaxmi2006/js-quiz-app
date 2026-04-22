@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Quiz App</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card dashboard-card">
+      <h1 id="welcomeText">Welcome</h1>
+      <p class="subtitle">Ready to test your JavaScript knowledge?</p>
+
+      <div class="dashboard-actions">
+        <a href="./quiz.html" class="btn btn-primary">Start Quiz</a>
+        <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/storage.js"></script>
+  <script>
+    protectPage();
+
+    const currentUser = getCurrentUser();
+    const welcomeText = document.getElementById("welcomeText");
+    const logoutBtn = document.getElementById("logoutBtn");
+
+    if (currentUser) {
+      welcomeText.textContent = `Welcome, ${currentUser.username}`;
+    }
+
+    logoutBtn.addEventListener("click", () => {
+      logoutUser();
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>

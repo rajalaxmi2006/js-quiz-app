@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | Quiz App</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./css/auth.css" />
+</head>
+<body>
+  <div class="page-center">
+    <div class="card auth-card">
+      <h1>Register</h1>
+      <p class="subtitle">Create your account</p>
+
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="registerUsername">Username</label>
+          <input type="text" id="registerUsername" placeholder="Enter username" required />
+        </div>
+
+        <div class="form-group">
+          <label for="registerEmail">Email</label>
+          <input type="email" id="registerEmail" placeholder="Enter email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="registerPassword">Password</label>
+          <input type="password" id="registerPassword" placeholder="Minimum 6 characters" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Register</button>
+        <p id="registerMessage" class="message"></p>
+      </form>
+
+      <p class="switch-link">
+        Already have an account?
+        <a href="./index.html">Login</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="./js/auth.js"></script>
+</body>
+</html>
